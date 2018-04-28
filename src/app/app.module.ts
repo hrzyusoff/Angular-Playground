@@ -4,11 +4,13 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './dribbble/home.component';
 import { SignUpComponent } from './dribbble/sign-up/sign-up.component';
 import { PaymentComponent } from './dribbble/payment/payment.component';
 import { LandingPageComponent } from './dribbble/landing-page/landing-page.component';
 
 const appRoute: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'landing', component: LandingPageComponent }
@@ -17,6 +19,7 @@ const appRoute: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     SignUpComponent,
     PaymentComponent,
     LandingPageComponent
