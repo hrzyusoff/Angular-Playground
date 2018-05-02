@@ -1,0 +1,130 @@
+/* Black Font  */
+
+@font-face {
+  font-family: 'Nunito-Black';
+  src: url('../../../assets/fonts/Nunito-Black.ttf') format('truetype');
+}
+
+/* Bold Font */
+
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: url('../../../assets/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+/* Regular Font */
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url('../../../assets/fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+/* Light Font */
+
+@font-face {
+  font-family: 'Nunito-Light';
+  src: url('../../../assets/fonts/Nunito-Light.ttf') format('truetype');
+}
+
+/* Set Main Font */
+
+div {
+  font-family: 'Nunito-Bold';
+}
+
+/* Font awesome sizing  */
+
+i {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Paragraph */
+
+p {
+  margin-bottom: 0rem;
+}
+
+/* Main Container */
+
+.container-custom {
+  height: 100vh;
+}
+
+/* PAYMENT Button */
+
+.payment-btn-container {
+  margin-top: 32px;
+}
+
+.btn-primary {
+  background-color: #499069;
+  border: 3px solid #499069;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+}
+
+/* Custom Card */
+
+.card-custom-left, .card-custom-right {
+  border-radius: 0rem;
+  border: none;
+  padding: 70px 20px 70px 20px;
+}
+
+.card-custom-right {
+  background-color: #499069;
+}
+
+.card-custom-left + .card-custom-right {
+  height: auto;
+}
+
+.card-body {
+  width: 500px;
+}
+
+/* H3 in Custom Card*/
+
+.card-body-title {
+  font-family: 'Nunito-Black';
+  color: #499069;
+  margin-bottom: 70px;
+}
+
+/* (or try with) word and Custom Input Font */
+
+.social-media-desc,
+.input-label {
+  color: #97BBAA;
+}
+
+/* (or try with) word  */
+
+.social-media-desc>label {
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+
+/* Custom Input*/
+
+input,
+input:focus {
+  border: 1px solid #9AA0A1;
+  background-color: #fff;
+  color: #9AA0A1;
+  font-family: 'Nunito-Light';
+}
+
+/* Sign Up Button,(or try with) word and social media items */
+
+.bottom-container {
+  margin-top: 50px;
+}
+
+.background{
+    background-color: rgb(139, 141, 141);
+
+}
+
