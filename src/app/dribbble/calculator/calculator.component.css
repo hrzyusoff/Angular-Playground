@@ -1,0 +1,123 @@
+/* Black Font  */
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url('../../../assets/fonts/Nunito-Black.ttf') format('truetype');
+}
+  
+/* Bold Font */
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('../../../assets/fonts/Nunito-Bold.ttf') format('truetype');
+}
+  
+/* Regular Font */
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../../../assets/fonts/Nunito-Regular.ttf') format('truetype');
+}
+  
+/* Light Font */
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('../../../assets/fonts/Nunito-Light.ttf') format('truetype');
+}
+  
+/* Set Main Font */
+div {
+    font-family: 'Nunito-Bold';
+}
+  
+/* Font awesome sizing  */
+i {
+    font-size: 30px;
+    color: #fff;
+}
+  
+/* Paragraph */
+p {
+    margin-bottom: 0rem;
+}
+  
+/* Main Container */
+.container-custom {
+    height: 100vh;
+}
+  
+/* Custom Card */
+.card-custom {
+    border-radius: 10px;
+    background-color: #1B212D;
+    /* padding: 70px 10px 70px 10px; */
+    color: white;
+}
+
+/* Custom Table  */ 
+.table-adv {
+    display: none;
+    position: absolute;
+    width: inherit;
+    top: 24px;
+}
+
+.table {
+    margin-bottom: 0rem;
+}
+
+.table thead th {
+    border-bottom: none;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+.table td {
+    padding: 0rem;
+}
+
+.btn-num {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background-color: #212A38;
+    font-family: 'Nunito-Light';
+}
+
+.btn-adv {
+    width: 127px;
+    height: 119px;
+    font-size: 20px;
+}
+
+.btn-op {
+    width: 80px;
+    height: 80px;
+    font-size: 15px;
+    background-color: #293342;
+}
+
+.btn-num, .btn-op, .btn-adv {
+    border-radius: 0px;
+    margin: 0rem;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: rgb(49, 62, 84);
+}
+
+.btn-primary:active, .btn-primary:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.calc-display {
+    height: 200px;
+}
+
+.collapse-btn-adv {
+    height: 25px;
+    background-color: #BD3450;
+}
+
+  
