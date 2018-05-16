@@ -1,25 +1,25 @@
 /* Black Font  */
 @font-face {
     font-family: 'Nunito-Black';
-    src: url('../../../assets/fonts/Nunito-Black.ttf') format('truetype');
+    src: url('/assets/fonts/Nunito/Nunito-Black.ttf') format('truetype');
 }
-  
+
 /* Bold Font */
 @font-face {
     font-family: 'Nunito-Bold';
-    src: url('../../../assets/fonts/Nunito-Bold.ttf') format('truetype');
+    src: url('/assets/fonts/Nunito/Nunito-Bold.ttf') format('truetype');
 }
-  
+
 /* Regular Font */
 @font-face {
     font-family: 'Nunito-Regular';
-    src: url('../../../assets/fonts/Nunito-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype');
 }
-  
+
 /* Light Font */
 @font-face {
     font-family: 'Nunito-Light';
-    src: url('../../../assets/fonts/Nunito-Light.ttf') format('truetype');
+    src: url('/assets/fonts/Nunito/Nunito-Light.ttf') format('truetype');
 }
   
 /* Set Main Font */
