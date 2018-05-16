@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/* Black Font  */
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url('/assets/fonts/Nunito/Nunito-Black.ttf') format('truetype');
+}
+
+/* Bold Font */
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('/assets/fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+}
+
+/* Regular Font */
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+/* Light Font */
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('/assets/fonts/Nunito/Nunito-Light.ttf') format('truetype');
+}
+
+/* Main Container */
+.custom-container {
+    font-family: 'Nunito-Bold';
+    height: 100vh;
+}

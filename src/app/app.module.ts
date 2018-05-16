@@ -8,12 +8,13 @@ import { HomeComponent } from './dribbble/home.component';
 import { SignUpComponent } from './dribbble/sign-up/sign-up.component';
 import { PaymentComponent } from './dribbble/payment/payment.component';
 import { LandingPageComponent } from './dribbble/landing-page/landing-page.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
-  { path: 'landing', component: LandingPageComponent }
+  { path: 'landing-page', component: LandingPageComponent }
 ]
 
 @NgModule({
@@ -22,7 +23,8 @@ const appRoute: Routes = [
     HomeComponent,
     SignUpComponent,
     PaymentComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

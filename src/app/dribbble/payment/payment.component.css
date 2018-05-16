@@ -1,58 +1,31 @@
-/* Black Font  */
-
-@font-face {
-  font-family: 'Nunito-Black';
-  src: url('../../../assets/fonts/Nunito-Black.ttf') format('truetype');
+/* Main Container */
+.main-container {
+  background-color: rgb(139, 141, 141);
 }
 
-/* Bold Font */
-
-@font-face {
-  font-family: 'Nunito-Bold';
-  src: url('../../../assets/fonts/Nunito-Bold.ttf') format('truetype');
+.custom-container {
+  background-color: #499069;
 }
 
-/* Regular Font */
-
-@font-face {
-  font-family: 'Nunito-Regular';
-  src: url('../../../assets/fonts/Nunito-Regular.ttf') format('truetype');
-}
-
-/* Light Font */
-
-@font-face {
+/* Table in custom card right */
+.light-font {
   font-family: 'Nunito-Light';
-  src: url('../../../assets/fonts/Nunito-Light.ttf') format('truetype');
 }
 
-/* Set Main Font */
-
-div {
-  font-family: 'Nunito-Bold';
+.total-table {
+  border-top: 1px solid #fff;
 }
 
-/* Font awesome sizing  */
-
-i {
-  font-size: 30px;
-  color: #fff;
+.table-sm {
+  width: 100%;
 }
 
 /* Paragraph */
-
 p {
   margin-bottom: 0rem;
 }
 
-/* Main Container */
-
-.container-custom {
-  height: 100vh;
-}
-
-/* PAYMENT Button */
-
+/* PAYMENT Button and button customization */
 .payment-btn-container {
   margin-top: 32px;
 }
@@ -66,26 +39,22 @@ p {
 }
 
 /* Custom Card */
-
-.card-custom-left, .card-custom-right {
+.custom-card-left,
+.custom-card-right {
   border-radius: 0rem;
   border: none;
   padding: 70px 20px 70px 20px;
 }
 
-.card-custom-right {
+.custom-card-right {
   background-color: #499069;
-}
-
-.card-custom-left + .card-custom-right {
-  height: auto;
+  padding-top: 82px;
+  padding-bottom: 82px;
 }
 
 .card-body {
   width: 500px;
 }
-
-/* H3 in Custom Card*/
 
 .card-body-title {
   font-family: 'Nunito-Black';
@@ -93,22 +62,14 @@ p {
   margin-bottom: 70px;
 }
 
-/* (or try with) word and Custom Input Font */
-
-.social-media-desc,
-.input-label {
-  color: #97BBAA;
+.inner-card-right {
+  background-color: #28774D;
+  color: #fff;
+  border-radius: 5px;
+  padding: 16px;
 }
 
-/* (or try with) word  */
-
-.social-media-desc>label {
-  margin-top: 0.5rem;
-  margin-bottom: 0rem;
-}
-
-/* Custom Input*/
-
+/* Custom Input */
 input,
 input:focus {
   border: 1px solid #9AA0A1;
@@ -117,14 +78,10 @@ input:focus {
   font-family: 'Nunito-Light';
 }
 
-/* Sign Up Button,(or try with) word and social media items */
-
-.bottom-container {
-  margin-top: 50px;
+.input-label-right {
+  color: #fff;
 }
 
-.background{
-    background-color: rgb(139, 141, 141);
-
+.input-label-left {
+  color: #96BCA9;
 }
-

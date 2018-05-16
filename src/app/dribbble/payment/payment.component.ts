@@ -12,4 +12,23 @@ export class PaymentComponent implements OnInit {
   ngOnInit() {
   }
 
+  groceries = [
+    {
+      item: "Gula",
+      price: "5"
+    },
+    {
+      item: "Garam",
+      price: "3"
+    },
+    {
+      item: "Beras",
+      price: "20"
+    },
+    {
+      item: "Bawang",
+      price: "2"
+    }
+  ];
+
 }

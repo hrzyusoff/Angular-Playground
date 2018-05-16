@@ -1,9 +1,9 @@
-<div class="background">
+<div class="background main-container">
 <!-- Main Container -->
-<div class="container-fluid d-flex flex-row justify-content-center align-items-center container-custom">
+<div class="d-flex flex-row justify-content-center align-items-center custom-container">
   <!-- Left Container -->
   <!-- Main Card Container -->
-  <div class="d-flex flex-column card card-custom-left">
+  <div class="d-flex flex-column card custom-card-left">
     <div class="card-body">
       <form>
         <!-- Content Inside card -->
@@ -11,21 +11,21 @@
         <!-- Input Container -->
         <div class="form-row">
           <div class="form-group col md-10">
-            <label for="ccno" class="input-label">CREDIT CARD NUMBER</label>
+            <label for="ccno" class="input-label-left">CREDIT CARD NUMBER</label>
             <input type="text" class="form-control" id="ccno">
           </div>
           <div class="form-group col md-2">
-            <label for="cvcno" class="input-label">CVC</label>
+            <label for="cvcno" class="input-label-left">CVC</label>
             <input type="text" class="form-control" id="cvcno">
           </div>
         </div>
         <div class="form-group">
-          <label for="cardname" class="input-label">CARDHOLDER'S NAME</label>
+          <label for="cardname" class="input-label-left">CARDHOLDER'S NAME</label>
           <input type="email" class="form-control" id="cardname">
         </div>
         <div class="form-row">
           <div class="form-group col md-6">
-            <label class="input-label">EXPIRATION DATE</label>
+            <label class="input-label-left">EXPIRATION DATE</label>
             <div class="form-row">
               <div class="col md-3">
                 <input type="number" class="form-control" id="expdatemonth">
@@ -50,22 +50,41 @@
   <!-- End of Left Container -->
   <!-- Right Container -->
   <!-- Main Card Container -->
-  <!-- <div class="d-flex flex-column card card-custom-right">
+  <div class="d-flex flex-column card custom-card-right">
     <div class="card-body">
-      <form> -->
-        <!-- Content Inside card -->
-        <!-- <h3 class="card-body-title">PAYMENT CHECKOUT</h3> -->
+      <form>
         <!-- Input Container -->
-        <!-- <div class="form-row">
+        <div class="form-row">
           <div class="form-group col md-10">
-            <label for="username" class="input-label">PAYMENT SUMMARY</label>
-
+            <label for="username" class="input-label-right">PAYMENT SUMMARY</label>
+            <div class="inner-card-right">
+              <table class="table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-left">ITEMS</th>
+                    <th scope="col" class="text-right">PRICE(MYR)</th>
+                  </tr>
+                </thead>
+                <tbody class="light-font" *ngFor="let grocery of groceries">
+                  <tr>
+                    <td scope="row" class="text-left">{{grocery.item}}</td>
+                    <td class="text-right">{{grocery.price}}</td>
+                  </tr>
+                </tbody>
+                <thead class="total-table">
+                  <tr>
+                    <th scope="col" class="text-left">TOTAL</th>
+                    <th scope="col" class="text-right"></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
           </div>
-        </div> -->
+        </div>
         <!-- End of Content Inside card -->
-      <!-- </form>
+      </form>
     </div>
-  </div> -->
+  </div>
   <!-- End of Main Card Container -->
   <!-- End of Right Container -->
 </div>
