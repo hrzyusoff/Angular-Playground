@@ -7,7 +7,7 @@
 /* Regular Font  */
 @font-face {
   font-family: 'Montserrat-Regular';
-  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.otf') format('opentype');
+  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 
 /* Light Font  */

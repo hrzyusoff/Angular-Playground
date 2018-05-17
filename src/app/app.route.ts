@@ -1,8 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
-import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './dribbble/home.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
@@ -21,37 +17,33 @@ import { FlashMessageComponent } from './dribbble/flash-message/flash-message.co
 import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
-import { AppRoutingModule } from './app.route';
+// import { importType } from '@angular/compiler/src/output/output_ast';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    SidebarComponent,
-    UnderconstructionComponent,
-    SignUpComponent,
-    PaymentComponent,
-    LandingPageComponent,
-    CalculatorComponent,
-    AppIconComponent,
-    UserProfileComponent,
-    SettingComponent,
-    ErrorPageComponent,
-    MusicPlayerComponent,
-    SocialShareComponent,
-    FlashMessageComponent,
-    ShopComponent,
-    DirectMessageComponent,
-    CountdownTimerComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpModule,
-    FormsModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+const appRoute: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'landing-page', component: LandingPageComponent },
+  { path: 'calculator', component: CalculatorComponent },
+  { path: 'app-icon', component: AppIconComponent },
+  { path: 'user-profile', component: UserProfileComponent },
+  { path: 'setting', component: SettingComponent },
+  { path: 'error-page', component: ErrorPageComponent },
+  { path: 'music-player', component: MusicPlayerComponent },
+  { path: 'social-share', component: SocialShareComponent },
+  { path: 'flash-message', component: FlashMessageComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'direct-message', component: DirectMessageComponent },
+  { path: 'countdown-timer', component: CountdownTimerComponent }
+]
+
+@NgModule ({
+    imports: [
+        RouterModule.forRoot(appRoute)
+    ],
+    exports: [
+        RouterModule
+    ]
 })
 
-export class AppModule { }
+export class AppRoutingModule {}
