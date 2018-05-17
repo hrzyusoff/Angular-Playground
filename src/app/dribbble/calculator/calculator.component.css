@@ -1,8 +1,7 @@
-  /* Set Main Font */
-div {
-    font-family: 'Nunito-Bold';
+.main-container {
+    background-color: #31353F;
 }
-  
+
 /* Fontawesome Sizing  */
 i {
     font-size: 16px;
@@ -21,11 +20,6 @@ i {
 /* Paragraph */
 p {
     margin-bottom: 0rem;
-}
-  
-/* Main Container */
-.container-custom {
-    height: 100vh;
 }
 
 /* Calculator Display */
@@ -102,7 +96,6 @@ p {
 .btn-adv, .btn-adv-key {
     background-color: #BD3450;
 }
-
 /* - Resetting Default Button Primary */
 .btn-num:hover, .btn-op:hover, .btn-num:active, .btn-op:active {
     background-color: rgb(49, 62, 84);
@@ -114,7 +107,6 @@ p {
 .btn-adv-key:hover, .btn-adv-key:focus {
     background-color: rgb(181, 74, 95);
 }
-
 .btn-adv:hover, .btn-adv:focus {
     background-color: rgb(143, 48, 67);
 }

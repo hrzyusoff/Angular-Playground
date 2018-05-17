@@ -1,0 +1,18 @@
+/* Main Container */
+.main-container {
+    background-color: #1B212D;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 0rem;
+}
+
+/* Custom Card */
+.card-custom {
+    border-radius: 10px;
+    background-color: #fff;
+    /* padding: 70px 10px 70px 10px; */
+    color: #333333;
+}
+  

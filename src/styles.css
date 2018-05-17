@@ -22,8 +22,25 @@
     src: url('/assets/fonts/Nunito/Nunito-Light.ttf') format('truetype');
 }
 
-/* Main Container */
-.custom-container {
+/* Custom Container */
+.main-container {
     font-family: 'Nunito-Bold';
     height: 100vh;
 }
+
+.custom-container {
+    height: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 2px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+/* End of Scrollbar */

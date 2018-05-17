@@ -4,7 +4,7 @@
 }
 
 .custom-container {
-  background-color: #499069;
+  display: table-row;
 }
 
 /* Table in custom card right */
@@ -44,6 +44,7 @@ p {
   border-radius: 0rem;
   border: none;
   padding: 70px 20px 70px 20px;
+  display: table-cell;
 }
 
 .custom-card-right {
