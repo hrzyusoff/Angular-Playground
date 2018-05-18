@@ -10,9 +10,102 @@ p {
 
 /* Custom Card */
 .card-custom {
-    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #fff;
     /* padding: 70px 10px 70px 10px; */
     color: #333333;
 }
-  
+
+.user-dp-container {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    width: 390px;
+    padding: 0rem;
+}
+
+i {
+    color: crimson;
+}
+
+.user-dp {
+    position: absolute;
+    top: 50px;
+    height: 170px;
+    width: 170px;
+    border-radius: 85px;
+    background-color: darkgrey;
+}
+
+.user-dp-container{
+    background-color: #333333;
+    height: 150px;
+    width: 100%;
+}
+
+.intro {
+    margin-top: 100px;
+}
+
+.intro, .user-dp-container {
+    margin-bottom: 40px;
+}
+
+/* .user-dp-container {
+    margin-top: 25px;
+} */
+
+.about-me {
+    margin: 0px 35px 50px 35px;
+}
+
+.about-me-desc {
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* .location {
+    font-size: 16px;
+} */
+
+.form-check-inline {
+    margin-right: 0rem;
+}
+
+.navigator {
+    height: 50px;
+}
+
+.aa {
+    border: 1px solid salmon;
+    margin-left: 20px;
+}
+
+.stats {
+    position: absolute;
+    padding: 30px;
+}
+
+.stats-title {
+    margin-bottom: 30px;
+}
+
+.stat {
+    margin-bottom: 15px;
+}
+
+.progress {
+    border-radius: 8rem;
+}
+
+.progress-bar {
+    background-color: #499069;
+}
