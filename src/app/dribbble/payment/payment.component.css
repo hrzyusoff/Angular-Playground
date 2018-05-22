@@ -3,8 +3,8 @@
   background-color: rgb(139, 141, 141);
 }
 
-.custom-container {
-  display: table-row;
+.test {
+  border: 1px solid salmon;
 }
 
 /* Table in custom card right */
@@ -40,16 +40,16 @@ p {
   border-radius: 0rem;
   border: none;
   padding: 70px 20px 70px 20px;
-  display: table-cell;
+}
+
+.aaa {
+  width: 428px;
 }
 
 .custom-card-right {
   background-color: #499069;
   padding-top: 82px;
   padding-bottom: 82px;
-}
-
-.card-body {
   width: 500px;
 }
 

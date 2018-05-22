@@ -1,0 +1,91 @@
+/* Main Container */
+.main-container {
+    background-color: #1B212D;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 0rem;
+}
+
+/* Custom Card */
+.card-custom {
+    border-radius: 10px;
+    background-color: #fff;
+    /* padding: 70px 10px 70px 10px; */
+    color: #333333;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    width: 390px;
+}
+
+.bottom {
+    border: 1px solid green;
+}
+
+.play {
+    border: 1px solid salmon;
+    background-color: #E4598D;
+    height: 96px;
+    border-radius: 48px;
+}
+
+.play > i {
+    font-size: 30px;
+    color: white;
+}
+
+.fa-step-backward, .fa-step-forward, .fa-bars, .fa-search{
+    font-size: 25px;
+}
+
+.fa-step-backward, .fa-step-forward {
+    color: #E4598D;
+}
+
+.fa-bars, .fa-search {
+    color: #303030;
+}
+
+.fa-random, .fa-refresh {
+    color: rgb(204, 204, 204);
+}
+.slider-container {
+    width: 100%; /* Width of the outside container */
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+.slider {
+    -webkit-appearance: none; 
+    width: 100%; 
+    height: 6px; 
+    background: #d3d3d3; 
+    outline: none; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    border-radius: 3px;
+}
+ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 18px; 
+    height: 18px; 
+    background: #E4598D; 
+    cursor: pointer; 
+    border-radius: 9px;
+}
+
+.slider::-moz-range-thumb {
+    width: 18px; 
+    height: 18px; 
+    background: #E4598D; 
+    cursor: pointer; 
+    border-radius: 9px;
+}
