@@ -1,0 +1,48 @@
+.main-container {
+    background: linear-gradient(to bottom right, #0B9E9D, #6B5099);
+}
+
+/* - Fontawesome Chevron Custom */
+.fa-chevron-up {
+    height: 25px;
+}
+
+/* Paragraph */
+p {
+    margin-bottom: 0rem;
+}
+
+/* Custom Card */
+.card-custom {
+    background-color: #1B212D;
+    color: white;
+}
+
+/* - Resetting Default Bootstrap Table */
+.table {
+    margin-bottom: 0rem;
+}
+.table thead th {
+    border-bottom: none;
+}
+.table th, .table td {
+    border-top: none;
+}
+.table td {
+    padding: 0rem;
+    height: 50px;
+    width: 50px;
+}
+
+.fill, .unfill {
+    height: inherit;
+    width: inherit;
+}
+
+.fill {
+    background-color: #303030;
+}
+
+.unfill {
+    background-color: #fff;
+}
