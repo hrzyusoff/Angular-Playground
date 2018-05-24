@@ -1,21 +1,3 @@
-/* Bold Font  */
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('../../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
-}
-
-/* Regular Font  */
-@font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
-}
-
-/* Light Font  */
-@font-face {
-  font-family: 'Montserrat-Light';
-  src: url('../../assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
-}
-
 #sidebar-fixed {
     position: fixed;
     z-index: 1;
@@ -25,8 +7,7 @@
     width: 270px;
     overflow-x: hidden;
     padding-top: 56px;
-    background-color: white;
-    font-family: 'Montserrat-Light';
+    font-family: 'Nunito-Regular';
 }
 
 /* celcom */
@@ -56,13 +37,36 @@ li {
   padding-bottom: 25px;
 } */
 
+.main-subtitle {
+    color: #333333;
+}
+
 .nav-pills .nav-link {
-    color: black;
+    color: rgb(175, 175, 175);
     border-radius: 0rem;
 }
 
 .nav-pills .nav-link.active {
-    font-family: 'Montserrat-Bold';
+    color: gray;
     background-color: #fff;
-    color: black;
+    border-left: 2px solid #ea4c89;
+    font-weight: bold;
 }
+
+.divider {
+    width: inherit;
+    height: 56px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 2px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+  }
+  /* END OF SCROLLBAR */

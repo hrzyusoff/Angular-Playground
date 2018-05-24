@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { KufiComponent } from './dribbble/_misc/kufi/kufi.component';
+import { MegamanComponent } from './dribbble/_misc/megaman/megaman.component';
 import { HomeComponent } from './dribbble/home.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 import { SettingComponent } from './dribbble/setting/setting.component';
@@ -28,6 +29,8 @@ import { AppRoutingModule } from './app.route';
   declarations: [
     AppComponent,
     HomeComponent,
+    KufiComponent,
+    MegamanComponent,
     SidebarComponent,
     UnderconstructionComponent,
     SignUpComponent,
@@ -43,8 +46,7 @@ import { AppRoutingModule } from './app.route';
     FlashMessageComponent,
     ShopComponent,
     DirectMessageComponent,
-    CountdownTimerComponent,
-    KufiComponent
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,

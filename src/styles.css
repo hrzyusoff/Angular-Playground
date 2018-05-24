@@ -30,6 +30,7 @@
 
 /* Custom Container */
 .main-container {
+    background-color: #31353F;
     font-family: 'Nunito-Bold';
     height: 100vh;
 }
@@ -47,7 +48,7 @@
 }
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: gray;
+    background: transparent;
 }
 /* End of Scrollbar */
 
