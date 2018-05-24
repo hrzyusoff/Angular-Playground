@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { KufiComponent } from './dribbble/_misc/kufi/kufi.component';
 import { MegamanComponent } from './dribbble/_misc/megaman/megaman.component';
+import { MarioComponent } from './dribbble/_misc/mario/mario.component';
 import { HomeComponent } from './dribbble/home.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 import { SettingComponent } from './dribbble/setting/setting.component';
@@ -31,6 +32,7 @@ import { AppRoutingModule } from './app.route';
     HomeComponent,
     KufiComponent,
     MegamanComponent,
+    MarioComponent,
     SidebarComponent,
     UnderconstructionComponent,
     SignUpComponent,

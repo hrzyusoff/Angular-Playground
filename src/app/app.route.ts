@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { KufiComponent } from './dribbble/_misc/kufi/kufi.component';
 import { MegamanComponent } from './dribbble/_misc/megaman/megaman.component';
+import { MarioComponent } from './dribbble/_misc/mario/mario.component';
 import { HomeComponent } from './dribbble/home.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 import { SettingComponent } from './dribbble/setting/setting.component';
@@ -24,6 +25,7 @@ import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-ti
 const appRoute: Routes = [
   { path: 'misc/kufi', component: KufiComponent},
   { path: 'misc/megaman', component: MegamanComponent},
+  { path: 'misc/mario', component: MarioComponent },
   { path: '', component: HomeComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
