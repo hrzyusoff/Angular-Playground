@@ -1,24 +1,16 @@
+/* Notes
+(-) First layer
+(--) Second Layer */
+
+/* Override style.css */
+/* - Background Color - */
 .main-container {
     background: linear-gradient(to bottom right, #0B9E9D, #6B5099);
 }
 
-/* - Fontawesome Chevron Custom */
-.fa-chevron-up {
-    height: 25px;
-}
-
-/* Paragraph */
-p {
-    margin-bottom: 0rem;
-}
-
-/* Custom Card */
-.card-custom {
-    background-color: #1B212D;
-    color: white;
-}
-
-/* - Resetting Default Bootstrap Table */
+/* Reset */
+/* - Resetting Default Bootstrap CSS */
+/* -- Table -- */
 .table {
     margin-bottom: 0rem;
 }
@@ -34,15 +26,22 @@ p {
     width: 50px;
 }
 
+/* Override */
+/* - Override Bootsrap CSS - */
+/* -- Card -- */
+.card-custom {
+    background-color: #1B212D;
+    color: white;
+}
+
+/* Kufi Styling */
 .fill, .unfill {
     height: inherit;
     width: inherit;
 }
-
 .fill {
     background-color: #303030;
 }
-
 .unfill {
     background-color: #fff;
 }

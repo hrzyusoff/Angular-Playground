@@ -1,6 +1,10 @@
+/* Notes
+(-) First layer
+(--) Second Layer */
+
 /* Reset */
-/* - Resetting Default Bootstrap CSS */
-/* -- Table */
+/* - Resetting Default Bootstrap CSS - */
+/* -- Table -- */
 .table {
     margin-bottom: 0rem;
 }
@@ -15,20 +19,16 @@
     height: 10px;
     width: 10px;
 }
-/* -- Paragraph */
-p {
-    margin-bottom: 0rem;
-}
 
 /* Override */
-/* - Override Bootsrap CSS */
-/* -- Card */
+/* - Override Bootsrap CSS - */
+/* -- Card -- */
 .card-custom {
     background-color: #1B212D;
     color: white;
 }
 
-/* Character */
+/* Character Styling */
 .blue, .turquoise, .grey, .black, .skin {
     height: inherit;
     width: inherit;

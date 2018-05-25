@@ -1,0 +1,35 @@
+-----
+ROUTE
+-----
+
+routerLink = "";
+used by absolute and relative
+
+ABSOLUTE PATH
+- start with /{{path}}
+- it is like main path
+e.g
+1. Home
+2. About
+3. Product
+
+RELATIVE PATH
+- wo start with /{{path}}
+- path that depending on main path
+e.g
+1. Home
+2. About
+3. Product
+  3.1 Sport
+  3.2 IT
+
+Router can be injected
+1. Declare in constructor(private router: Router)
+2. this.router.navigate(['path'])
+   - in navigate we can do both absolute and relative
+   - for absolute use it as usual
+   - for relative just extended this.router.navigate(['path'], {relativeTo: this.route}) 
+     but before that in constructor we need to declare private route: ActivatedRoute
+
+Also can receive parameter
+product/sport/:type <- dynamic
