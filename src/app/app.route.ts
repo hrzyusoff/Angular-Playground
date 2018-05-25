@@ -4,7 +4,7 @@ import { KufiComponent } from './dribbble/showcase/_misc/kufi/kufi.component';
 import { MegamanComponent } from './dribbble/showcase/_misc/megaman/megaman.component';
 import { MarioComponent } from './dribbble/showcase/_misc/mario/mario.component';
 import { HomeComponent } from './dribbble/home.component';
-import { HomeShowcaseComponent } from './dribbble/showcase/showcase.component';
+import { ShowcaseComponent } from './dribbble/showcase/showcase.component';
 import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 import { SettingComponent } from './dribbble/showcase/setting/setting.component';
 import { SignUpComponent } from './dribbble/showcase/sign-up/sign-up.component';
@@ -24,7 +24,7 @@ import { CountdownTimerComponent } from './dribbble/showcase/countdown-timer/cou
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'showcase', component: HomeShowcaseComponent, children: [
+  { path: 'showcase', component: ShowcaseComponent, children: [
     { path: 'kufi', component: KufiComponent},
     { path: 'megaman', component: MegamanComponent},
     { path: 'mario', component: MarioComponent },
