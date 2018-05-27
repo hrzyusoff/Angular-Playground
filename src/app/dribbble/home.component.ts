@@ -14,6 +14,6 @@ export class HomeComponent implements OnInit {
     }
 
     goToShowcase() {
-        this.router.navigate(['showcase']);
+        this.router.navigate(['/showcase']);
     }
 }
