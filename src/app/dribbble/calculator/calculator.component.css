@@ -12,11 +12,6 @@ i {
     height: 25px;
 }
 
-/* .btn-adv:focus .fa-chevron-up {
-    transform: rotate(180deg);
-    transition: all 0.8s;
-} */
-
 /* Paragraph */
 p {
     margin-bottom: 0rem;
@@ -31,7 +26,6 @@ p {
 .card-custom {
     border-radius: 10px;
     background-color: #1B212D;
-    /* padding: 70px 10px 70px 10px; */
     color: white;
 }
 
@@ -42,16 +36,20 @@ p {
     width: 380px;
     top: 220px;
 }
+
 /* - Resetting Default Bootstrap Table */
 .table {
     margin-bottom: 0rem;
 }
+
 .table thead th {
     border-bottom: none;
 }
+
 .table th, .table td {
     border-top: none;
 }
+
 .table td {
     padding: 0rem;
 }

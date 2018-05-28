@@ -3,6 +3,12 @@ p {
     margin-bottom: 0rem;
 }
 
+/* Fontawesome color  */
+i {
+    color: crimson;
+}
+
+
 /* Custom Card */
 .card-custom {
     border-top-right-radius: 20px;
@@ -10,13 +16,7 @@ p {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #fff;
-    /* padding: 70px 10px 70px 10px; */
     color: #333333;
-}
-
-.user-dp-container {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
 }
 
 .card {
@@ -28,8 +28,15 @@ p {
     padding: 0rem;
 }
 
-i {
-    color: crimson;
+/* Default Picture and Intro */
+.user-dp-container, .intro {
+    margin-bottom: 40px;
+}
+
+/* Default Picture */
+.user-dp-container {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .user-dp {
@@ -51,14 +58,7 @@ i {
     margin-top: 100px;
 }
 
-.intro, .user-dp-container {
-    margin-bottom: 40px;
-}
-
-/* .user-dp-container {
-    margin-top: 25px;
-} */
-
+/* User Description */
 .about-me {
     margin: 0px 35px 50px 35px;
 }
@@ -67,26 +67,31 @@ i {
     text-align: justify;
     text-justify: inter-word;
 }
-/* .location {
-    font-size: 16px;
-} */
 
+/* Page Navigation */
 .form-check-inline {
     margin-right: 0rem;
 }
 
-.navigator {
+.navigator-container {
     height: 50px;
 }
 
-.aa {
-    border: 1px solid salmon;
-    margin-left: 20px;
+.bio {
+    z-index: 20;
 }
 
+/* User Stats */
 .stats {
     position: absolute;
     padding: 30px;
+    border: 1px solid #499069;
+    background-color: #fff;
+    width: 100%;
+    top: 3px;
+    height: 647.227px;
+    border-radius: 10px;
+    z-index: -10;
 }
 
 .stats-title {

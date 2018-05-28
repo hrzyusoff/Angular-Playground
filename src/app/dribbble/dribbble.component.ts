@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css']
+    selector: 'app-dribbble',
+    templateUrl: './dribbble.component.html',
+    styleUrls: ['./dribbble.component.css']
 })
-export class HomeComponent implements OnInit {
+export class DribbbleComponent implements OnInit {
 
     constructor(private router: Router) { }
 
