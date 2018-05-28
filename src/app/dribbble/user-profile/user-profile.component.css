@@ -77,10 +77,6 @@ i {
     height: 50px;
 }
 
-.bio {
-    z-index: 20;
-}
-
 /* User Stats */
 .stats {
     position: absolute;
@@ -91,7 +87,6 @@ i {
     top: 3px;
     height: 647.227px;
     border-radius: 10px;
-    z-index: -10;
 }
 
 .stats-title {
