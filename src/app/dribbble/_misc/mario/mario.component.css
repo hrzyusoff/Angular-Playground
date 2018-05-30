@@ -1,0 +1,80 @@
+/* Notes
+(-) First layer
+(--) Second Layer */
+
+/* Reset */
+/* - Resetting Default Bootstrap CSS - */
+/* -- Table -- */
+.table {
+    margin-bottom: 0rem;
+}
+.table thead th {
+    border-bottom: none;
+}
+.table th, .table td {
+    border-top: none;
+}
+.table td {
+    padding: 0rem;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+}
+.main-container {
+    background-color: #79DAFB;
+}
+
+/* Character Styling */
+.red-hat,
+.blue-shirt,
+.skin,
+.brown,
+.nose,
+.shirt-button,
+.red-hat-shadow,
+.blue-shirt-shadow,
+.skin-shadow,
+.dark-brown,
+.nose-shadow,
+.eye {
+    height: inherit;
+    width: inherit;
+}
+/* Light Color */
+.red-hat {
+    background-color: #CD1A1D;
+}
+.blue-shirt {
+    background-color: #008FC7;
+}
+.skin {
+    background-color: #FFC192;
+}
+.brown {
+    background-color: #843E0D;
+}
+.nose {
+    background-color: #F89E86;
+}
+.shirt-button {
+    background-color: #FFD300;
+}
+/* Dark Color */
+.red-hat-shadow {
+    background-color: #990305;
+}
+.blue-shirt-shadow {
+    background-color: #0662B7;
+}
+.skin-shadow {
+    background-color: #EFA671;
+}
+.dark-brown {
+    background-color: #5A2C0A;
+}
+.nose-shadow {
+    background-color: #EC7D74;
+}
+.eye {
+    background-color: #000;
+}
