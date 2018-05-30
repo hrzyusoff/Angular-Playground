@@ -4,15 +4,15 @@ p {
 }
 
 /* Fontawesome color  */
-i {
+.fa-map-marker {
     color: crimson;
 }
 
 
 /* Custom Card */
 .card-custom {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: #fff;
@@ -21,6 +21,7 @@ i {
 
 .card {
     border: none;
+    height: 650px;
 }
 
 .card-body {
@@ -60,7 +61,7 @@ i {
 
 /* User Description */
 .about-me {
-    margin: 0px 35px 50px 35px;
+    margin: 0px 35px 100px 35px;
 }
 
 .about-me-desc {
@@ -79,14 +80,7 @@ i {
 
 /* User Stats */
 .stats {
-    position: absolute;
     padding: 30px;
-    border: 1px solid #499069;
-    background-color: #fff;
-    width: 100%;
-    top: 3px;
-    height: 647.227px;
-    border-radius: 10px;
 }
 
 .stats-title {
@@ -103,4 +97,27 @@ i {
 
 .progress-bar {
     background-color: #499069;
+}
+
+/* Page Navigation */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #080A0D;
+}
+
+/* Refactor */
+.about-me-title, .stats-title {
+    font-size: 1.1rem;
+}
+
+.fa-ellipsis-h {
+    font-size: 30px;
+    color: #fff;
 }

@@ -1,13 +1,20 @@
 <!-- Main Container -->
 <div class="main-container">
-<!-- custom Container -->
+<!-- Custom Container -->
 <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
     <div class="d-flex flex-row card card-custom">
-        <div class="card-body">
+        <div id="myCarousel" class="card-body carousel" data-interval="false">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Inner Carousel -->
+            <div class="carousel-inner">
             <!-- First Page - Bio -->
             <!-- Default Picture and User Intro -->
-            <div class="bio">
-                <div class="d-flex justify-content-center align-items-center user-dp-container text-center">
+            <div class="bio carousel-item active">
+                <div class="d-flex justify-content-center align-items-center user-dp-container">
+                    <!-- <i class="fa fa-ellipsis-h option"></i> -->
                     <div class="user-dp"></div>
                 </div>
                 <div class="intro text-center">
@@ -18,52 +25,30 @@
                  <!-- Default Picture and User Intro -->                
                 <!-- User Description -->
                 <div class="about-me">
-                    <div class="about-me-title">About Me</div>
+                    <div class="about-me-title superbold-font">About Me</div>
                     <div class="about-me-desc light-font">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, reiciendis ipsam, nobis, quasi officiis enim maxime minima repellendus ex laudantium ratione quam consequuntur culpa cum rerum ad iusto voluptatum fugit !
                     </div>
                 </div>
-                <!-- End of User Description -->                
-                <!-- Page Navigation -->
-                <div class="navigator-container text-center">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="page-navigator" id="page-one" value="p-one" checked>
-                        <label for="page-one"></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="page-navigator" id="page-two" value="p-two">
-                        <label for="page-two"></label>
-                    </div>
-                </div>
-                <!-- End of Page Navigation -->                
+                <!-- End of User Description -->                         
             </div>
             <!-- End of First Page - Bio -->
             <!-- Second Page - Stats -->
-            <div class="stats collapse">
-                <div class="stats-title">Stats</div>
+            <div class="stats carousel-item">
+                <div class="stats-title superbold-font">Stats</div>
                 <div class="stat">HTML<div class="progress"><div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
                 <div class="stat">CSS<div class="progress"><div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
                 <div class="stat">JS<div class="progress"><div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
-                <div class="stat">Adobe Illustrator<div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
-                <div class="stat">Adobe Photoshop<div class="progress"><div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
                 <div class="stat">Adobe XD<div class="progress"><div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
-                <!-- Page Navigation -->
-                <div class="navigator-container text-center">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="page-navigator" id="page-one" value="p-one">
-                        <label for="page-one"></label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="page-navigator" id="page-two" value="p-two">
-                        <label for="page-two"></label>
-                    </div>
-                </div>
-                <!-- End of Page Navigation -->  
+                <div class="stat">ADOBE ILLUSTRATOR<div class="progress"><div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+                <div class="stat">ADOBE PHOTOSHOP<div class="progress"><div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div></div>
             </div>
             <!-- End of Second Page - Stats -->
+            </div>
+            <!-- End of Inner Carousel -->
         </div>
     </div>
 </div>
-<!-- custom Container -->
+<!-- Custom Container -->
 </div>
 <!-- Main Container -->
