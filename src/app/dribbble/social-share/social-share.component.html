@@ -1,18 +1,40 @@
-<div class="custom-container">
-    <section class="gallery-block cards-gallery">
-        <div class="container social-card">
-            <div class="row" id="userFeed">
-                <div class="col-md-6 col-lg-4" *ngFor="let topnews of news.articles | slice:0:4">
-                    <div class="card border-0 transform-on-hover">
-                        <a class="lightbox">
-                        </a>
-                        <div class="card-body">
-                            <h6><a href="#">{{topnews.title}}</a></h6>
-                            <p>{{topnews.description}}</p>
+<!-- Main Container -->
+<div class="main-container">
+    <!-- Custom Container -->
+    <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
+        <div class="d-flex card card-custom">
+            <div class="main-card">
+                <div class="top row">
+                    <div class="col-6 no-pad text-left"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="col-6 no-pad text-right"><i class="fa fa-search" aria-hidden="true"></i></div>
+                </div>
+                <div class="content row">
+                    <div class="col-md-6 col-lg-4 no-pad" *ngFor="let topnews of news.articles | slice:0:6">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="news-title">{{topnews.title}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End of Custom Container -->
 </div>
+<!-- End of Main Container -->
+
+<!-- <section class="gallery-block cards-gallery">
+        <div class="row" id="userFeed">
+            <div class="col-md-6 col-lg-4" *ngFor="let topnews of news.articles | slice:0:4">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox">
+                    </a>
+                    <div class="card-body">
+                        <h6>{{topnews.title}}</h6>
+                        <p class="light-font">{{topnews.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section> -->
