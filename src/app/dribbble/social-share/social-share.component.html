@@ -1,1 +1,18 @@
-<app-underconstruction></app-underconstruction>
+<div class="custom-container">
+    <section class="gallery-block cards-gallery">
+        <div class="container social-card">
+            <div class="row" id="userFeed">
+                <div class="col-md-6 col-lg-4" *ngFor="let topnews of news.articles | slice:0:4">
+                    <div class="card border-0 transform-on-hover">
+                        <a class="lightbox">
+                        </a>
+                        <div class="card-body">
+                            <h6><a href="#">{{topnews.title}}</a></h6>
+                            <p>{{topnews.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -26,6 +26,8 @@ import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
 import { AppRoutingModule } from './app.route';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsService } from './_services/news.service';
 
 @NgModule({
   declarations: [
@@ -56,9 +58,10 @@ import { AppRoutingModule } from './app.route';
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [NewsService],
   bootstrap: [AppComponent]
 })
 
