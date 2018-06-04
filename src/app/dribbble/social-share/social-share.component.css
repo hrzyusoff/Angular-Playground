@@ -17,6 +17,11 @@
     /* border: 1px solid green; */
     padding: 10px;
 }
+
+.news-image {
+    height: 50%;
+    width: 100%;
+}
 /* 
 .overflow {
     height: 150px;

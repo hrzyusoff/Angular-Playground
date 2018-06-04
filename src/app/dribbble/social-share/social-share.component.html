@@ -8,9 +8,15 @@
                     <div class="col-6 no-pad text-left"><i class="fa fa-bars" aria-hidden="true"></i></div>
                     <div class="col-6 no-pad text-right"><i class="fa fa-search" aria-hidden="true"></i></div>
                 </div>
+                <div class="title row">
+                
+                </div>
                 <div class="content row">
                     <div class="col-md-6 col-lg-4 no-pad" *ngFor="let topnews of news.articles | slice:0:6">
                         <div class="card">
+                            <a class="lightbox">
+                                <img class="news-image" src="{{topnews.urlToImage}}" alt="Image">
+                            </a>
                             <div class="card-body">
                                 <p class="news-title">{{topnews.title}}</p>
                             </div>
