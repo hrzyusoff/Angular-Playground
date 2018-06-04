@@ -1,0 +1,81 @@
+// COLOR
+$light-grey: #cccccc;
+$dark-grey: #333333;
+$light-blue: #2196F3;
+$light-green: #40D459;
+$dark-green: #208833 ;
+$white: #ffffff;
+
+label {
+    margin-bottom: 0rem;
+}
+
+.card-custom {
+    height: 150px;
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+}
+
+.switch-container {
+    height: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+
+    input {
+        display: none;
+    }
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $light-grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        bottom: -5px;
+        background-color: $dark-grey;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+}
+
+.slider.round {
+    border-radius: 15px;
+    &::before {
+        border-radius: 50%;
+    }
+}
+
+input {
+    &:checked + .slider {
+        background-color: $light-green;
+    }
+    &:focus + .slider {
+        box-shadow: 0 0 1px $light-green;
+    }
+}
+
+input:checked + .slider:before {
+    background-color: $dark-green;
+    -webkit-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    transform: translateX(35px)
+}
+

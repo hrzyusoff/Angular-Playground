@@ -25,6 +25,7 @@ import { FlashMessageComponent } from './dribbble/flash-message/flash-message.co
 import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
+import { SwitchComponent } from './dribbble/switch/switch.component';
 import { AppRoutingModule } from './app.route';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './_services/news.service';
@@ -53,6 +54,7 @@ import { NewsService } from './_services/news.service';
     ShopComponent,
     DirectMessageComponent,
     CountdownTimerComponent,
+    SwitchComponent,
   ],
   imports: [
     BrowserModule,

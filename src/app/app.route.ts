@@ -21,6 +21,7 @@ import { FlashMessageComponent } from './dribbble/flash-message/flash-message.co
 import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
+import { SwitchComponent } from './dribbble/switch/switch.component';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent },  
@@ -41,7 +42,8 @@ const appRoute: Routes = [
   { path: 'flash-message', component: FlashMessageComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'direct-message', component: DirectMessageComponent },
-  { path: 'countdown-timer', component: CountdownTimerComponent }
+  { path: 'countdown-timer', component: CountdownTimerComponent },
+  { path: 'switch', component: SwitchComponent }
 ]
 
 @NgModule ({
