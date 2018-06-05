@@ -32,11 +32,11 @@
 .main-container {
     background-color: #31353F;
     font-family: 'Nunito-Bold';
-    height: 100vh;
+    height: 100%;
 }
 
 .custom-container {
-    height: 100%;
+    height: 100vh;
 }
 
 /* Scrollbar */
