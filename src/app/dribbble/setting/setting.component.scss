@@ -1,0 +1,120 @@
+// COLOR SCHEME
+$white: #ffffff;
+$light-grey: #A4A7B0;
+$dark-grey: #333333;
+$light-green: #73e886;
+$dark-green: #3cc655 ;
+
+
+
+/* Paragraph */
+p {
+    margin-bottom: 0rem;
+}
+
+/* Custom Card */
+.card {
+    height: 650px;
+    width: 390px;
+    border-radius: 12px;
+    border: none;
+    background-color: $white;
+    color: $dark-grey;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.top {
+    margin-top: 1rem;
+    p {
+        font-size: 18px;
+    }
+}
+
+i {
+    cursor: pointer;
+}
+
+.fa-arrow-left, .fa-cog {
+    font-size: 24px;
+}
+
+.setting-content {
+    .usb-tether, .wifi-hotspot, .bt-tether {
+        border-bottom: 1px solid $light-grey ;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+}
+
+/* .aa {
+    border: 1px solid red;
+}
+
+.bb {
+    border: 1px solid palevioletred;
+} */
+
+.switch-container {
+    height: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 10px;
+
+    input {
+        display: none;
+    }
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $light-grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        bottom: -5px;
+        background-color: $dark-grey;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+}
+
+.slider.round {
+    border-radius: 5px;
+    &::before {
+        border-radius: 50%;
+    }
+}
+
+input {
+    &:checked + .slider {
+        background-color: $light-green;
+    }
+    &:focus + .slider {
+        box-shadow: 0 0 1px $light-green;
+    }
+}
+
+input:checked + .slider:before {
+    background-color: $dark-green;
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px)
+}
