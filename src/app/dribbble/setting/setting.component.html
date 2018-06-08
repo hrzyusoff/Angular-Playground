@@ -4,33 +4,43 @@
     <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
         <div class="d-flex flex-row card">
             <div class="card-body">
+                <!-- Top Container -->
                 <div class="top row">
                     <div class="col-2 text-left aa"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
                     <div class="col-10 text-left bb"><p class="superbold-font">Tethering & Portable Hotspot</p></div>
                 </div>
+                <!-- End of Top Container -->
+                <!-- Setting Container -->
                 <div class="d-flex flex-column setting-content">
+                    <!-- USB Tether Container -->
                     <div class="usb-tether">
                         <p class="title superbold-font">USB Tethering</p>
                         <div class="row sub-content">
                             <div class="col-10 light-font">No USB Connected</div>
-                            <div class="col-2">          
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
+                            <div class="col-2">
+                                <div class="switch-container">          
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- End of USB Tether Container -->
+                    <!-- WiFi Hotspot Container -->                    
                     <div class="wifi-hotspot">
                         <p class="title superbold-font">Portable Wi-Fi Hotspot</p>
                         <div class="row sub-content">
                             <!-- Do ngIf here -->
                             <div class="col-10 light-font">Your portable hotspot active</div>
-                            <div class="col-2">          
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
+                            <div class="col-2">
+                                <div class="switch-container">       
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>  
                             </div>
                         </div>
                         <div class="row sub-content">
@@ -40,18 +50,25 @@
                             </div>
                         </div>                                                 
                     </div>
+                    <!-- End of WiFi Hotspot Container -->
+                    <!-- Bluetooth Tether Container -->             
                     <div class="bt-tether">
                         <p class="title superbold-font">Bluetooth Tethering</p>
                         <div class="row sub-content">
                             <div class="col-10 light-font">No Bluetooth Connected</div>
-                            <div class="col-2">          
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label></div>
+                            <div class="col-2">
+                                <div class="switch-container">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>                        
                     </div>
+                    <!-- End of Bluetooth Tether Container -->                       
                 </div>
+                <!-- End of Setting Container -->                
             </div>
         </div>
     </div>

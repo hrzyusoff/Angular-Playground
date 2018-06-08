@@ -42,11 +42,31 @@ i {
 }
 
 .setting-content {
-    .usb-tether, .wifi-hotspot, .bt-tether {
+    
+    .usb-tether, .wifi-hotspot {
         border-bottom: 1px solid $light-grey ;
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
     }
+
+    .usb-tether, .wifi-hotspot, .bt-tether {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .sub-content {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            // border: 1px solid red;
+        }
+    }
+    
+}
+
+// .col-2, .col-10 {
+//     border: 1px solid green;
+// }
+
+.switch-container {
+    position: absolute;
+    top: 30%;
 }
 
 /* .aa {
