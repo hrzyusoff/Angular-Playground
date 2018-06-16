@@ -29,6 +29,8 @@ import { SwitchComponent } from './dribbble/switch/switch.component';
 import { AppRoutingModule } from './app.route';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './_services/news.service';
+import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
+import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { NewsService } from './_services/news.service';
     DirectMessageComponent,
     CountdownTimerComponent,
     SwitchComponent,
+    PetronasComponent,
+    JeepComponent,
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,9 @@ import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
 import { SwitchComponent } from './dribbble/switch/switch.component';
+import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
+import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
+
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent },  
@@ -29,6 +32,8 @@ const appRoute: Routes = [
   { path: 'kufi', component: KufiComponent},
   { path: 'megaman', component: MegamanComponent},
   { path: 'mario', component: MarioComponent },
+  { path: 'petronas', component: PetronasComponent },
+  { path: 'jeep', component: JeepComponent },    
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'landing-page', component: LandingPageComponent },
