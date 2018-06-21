@@ -1,5 +1,238 @@
-.mirror {
-    width: 200px;
+$bumper: #4d4d4d;
+$bumper-2: #5c5c5c;
+$tyre: #595959;
+$tyre-2: #525252;
+$seat: #505050;
+$steering: #444444;
+$wiper: #3d3d3d;
+$plate-num: #ededed;
+$lamp: #f5f5f5;
+$radiator: #555555;
+$mirror: #6a6a6a;
+$body: #c92222;
+$body-dark: #ba2727;
+$body-dark-2: #a52828;
+$body-dark-3: #7e1e1e;
+$rect-lamp: #ffa500;
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-no-justify {
+  display: flex;
+  align-items: center;
+}
+
+.jeep-container {
+    @include center;
+    flex-flow: column;
+    
+}
+
+.main-containers {
+    background-color: #31353F;
+    height: 100%;
+}
+
+.custom-containers {
+    @include center;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.lamp-container {
+    @include center;
+    width: 340px;
     height: 70px;
-    background-color: grey;
+    background-color: $bumper;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .left-lamp,
+    .right-lamp {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $lamp;
+    }
+
+    .radiator {
+      width: 200px;
+      height: 50px;
+      background-color: $radiator;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+}
+
+.bonet-container {
+    @include center;
+    height: 15px;
+    width: 310px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: $body-dark;
+    .up-bonet {
+        width: 70px;
+        height: 25px;
+        background-color: $body-dark-2;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .side-mirror {
+        margin-top: -47px;
+        &::before {
+            position: absolute;
+            content: "";
+            margin-left: 190px;
+            width: 50px;
+            height: 30px;
+            background-color: $body-dark-3;
+            border-radius: 10px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            margin-left: -170px;
+            width: 50px;
+            height: 30px;
+            background-color: $body-dark-3;
+            border-radius: 10px;
+        }
+    }
+}
+
+.mirror-container {
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: $body;
+    height: 160px;
+    width: 298px;
+    .inner-mirror {
+        padding-top: 130px;
+        width: 278px;
+        height: 150px;
+        background-color: $mirror;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        .bottom-inner-mirror {
+            width: 278px;
+            height: 20px;
+            background-color: $tyre;
+        }
+        .seat, .wiper {
+            @include center-no-justify;
+        }
+        .seat-left, .seat-right {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-left: 20px;
+            margin-top: -120px;
+            width: 80px;
+            height: 80px;
+            background-color: $seat;
+        }
+        .seat-left {
+            margin-left: 20px;
+        }
+        .steering {
+            margin-top: 25px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 12px solid $steering;
+        }
+        .seat-divider {
+            width: 88px;
+        }
+        .seat-right {
+            margin-right: 20px;
+        }
+        .wiper-left, .wiper-right {
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            margin-top: -10px;
+            background-color: #505050;
+        }
+        .wiper-left {
+            margin-left: 10px;
+        }
+        .wiper-right {
+            margin-right: 10px;
+        }
+        .wiper-divider {
+            width: 78px;
+        }
+    }
+}
+
+.bumper-container {
+    @include center-no-justify;
+    width: 365px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: $bumper-2;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .rect-left-lamp, .rect-right-lamp {
+        width: 50px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: $rect-lamp;
+    }
+
+    .plate {
+        @include center;
+        width: 245px;
+        .plate-num {
+            margin-top: 30px;
+            width: 70px;
+            height: 50px;
+            background-color: $plate-num;
+            border-radius: 6px;
+        }
+    }
+}
+
+.tyre-container {
+    @include center-no-justify;
+    width: 350px;
+
+    .left-tyre, .right-tyre {
+        width: 50px;
+        height: 70px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        background-color: $tyre;
+    }
+
+    .left-tyre {
+        margin-left: 10px;
+        &::after {
+            position: absolute;
+            content:"";
+            height: 30px;
+            width: 50px;
+            background-color: $tyre-2;
+        }
+    }
+
+    .right-tyre {
+        margin-left: 230px;
+        &::after {
+            position: absolute;
+            content: "";
+            height: 30px;
+            width: 50px;
+            background-color: $tyre-2;
+        }
+    }
 }
