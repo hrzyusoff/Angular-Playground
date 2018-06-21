@@ -2,7 +2,7 @@
 <div class="main-container">
     <!-- Custom Container -->
     <div class="container-fluid d-flex justify-content-center align-items-center custom-container">
-        <div class="d-flex flex-row card">
+        <div class="d-flex card">
             <div class="card-body">
                 <!-- Top Container -->
                 <div class="top row">
@@ -68,9 +68,53 @@
                     </div>
                     <!-- End of Bluetooth Tether Container -->                       
                 </div>
-                <!-- End of Setting Container -->                
+                <!-- End of Setting Container -->
             </div>
         </div>
+        <!-- Set up Wi-Fi Hotspot Pop Up -->
+        <div class="card pop-up-container">
+            <div class="card pop-up">
+                <p class="title superbold-font">Set-Up Wifi Portable</p>
+                <div class="row sub-content">
+                    <div class="form-group col-12">
+                        <div class="light-font">Network Name</div>
+                        <div><input type="text" class="form-control" id="netname"></div>
+                    </div>
+                    <div class="form-group col-12">
+                        <div class="light-font">Security</div>
+                        <div><input type="text" class="form-control" id="netsecurity"></div>
+                    </div>
+                    <div class="form-group col-12">
+                        <div class="light-font">Password</div>
+                        <div><input type="password" class="form-control" id="netpassword"></div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="showpwd">
+                            <label class="form-check-label light-font" for="showpwd">
+                            Show Password
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-12">
+                        <div class="light-font"></div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle light-font" type="button" id="dropdownAP" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AP Band</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAP">
+                                <a href="#" class="dropdown-item">2.4Ghz Band</a>
+                                <a href="#" class="dropdown-item">5Ghz Band</a>
+                            </div>
+                        </div>
+                        <!-- <div><input type="text" class="form-control" id="netband"></div> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <button class="btn btn-primary btn-cancel">CANCEL</button>
+                        <button class="btn btn-primary btn-save">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Set up Wi-Fi Hotspot Pop Up -->
     </div>
     <!-- Custom Container -->
 </div>

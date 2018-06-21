@@ -2,6 +2,7 @@
 $white: #ffffff;
 $light-grey: #A4A7B0;
 $dark-grey: #333333;
+$dark-grey-transparent: #0000005d;
 $light-green: #73e886;
 $dark-green: #3cc655 ;
 
@@ -54,28 +55,16 @@ i {
         .sub-content {
             padding-top: 1rem;
             padding-bottom: 1rem;
-            // border: 1px solid red;
         }
     }
     
 }
 
-// .col-2, .col-10 {
-//     border: 1px solid green;
-// }
-
+/* Toggle */
 .switch-container {
     position: absolute;
     top: 30%;
 }
-
-/* .aa {
-    border: 1px solid red;
-}
-
-.bb {
-    border: 1px solid palevioletred;
-} */
 
 .switch-container {
     height: 100%;
@@ -136,4 +125,32 @@ input:checked + .slider:before {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px)
+}
+
+
+// Wi-Fi Hotspot Popup
+.pop-up-container {
+    display: none;
+    position: absolute;
+    background-color: $dark-grey-transparent;
+    // left: 50%;
+    .pop-up {
+        top: 15%;
+        padding: 1.5rem;
+        margin-left: 15px;
+        width: 360px;
+        height: 445px;
+    }
+    .form-check-label {
+        color: $light-grey;
+    }
+    .btn-primary {
+        background-color: $white;
+        border: $white;
+        color: $dark-grey;
+        &:active, &:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
 }
