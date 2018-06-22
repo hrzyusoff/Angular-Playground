@@ -13,6 +13,10 @@ p {
     margin-bottom: 0rem;
 }
 
+label {
+    margin-bottom: 0rem;
+}
+
 /* Custom Card */
 .card {
     height: 650px;
@@ -51,13 +55,13 @@ i {
     .usb-tether, .wifi-hotspot, .bt-tether {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-
-        .sub-content {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
     }
-    
+
+}
+
+.sub-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Toggle */
@@ -118,39 +122,93 @@ input {
     &:focus + .slider {
         box-shadow: 0 0 1px $light-green;
     }
+    &:checked + .slider:before {
+        background-color: $dark-green;
+        -webkit-transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        transform: translateX(15px)
+    }   
 }
-
-input:checked + .slider:before {
-    background-color: $dark-green;
-    -webkit-transform: translateX(15px);
-    -ms-transform: translateX(15px);
-    transform: translateX(15px)
-}
-
-
 // Wi-Fi Hotspot Popup
 .pop-up-container {
     display: none;
     position: absolute;
     background-color: $dark-grey-transparent;
-    // left: 50%;
     .pop-up {
         top: 15%;
         padding: 1.5rem;
         margin-left: 15px;
         width: 360px;
-        height: 445px;
+        height: 465px;
     }
+
     .form-check-label {
         color: $light-grey;
     }
-    .btn-primary {
-        background-color: $white;
-        border: $white;
-        color: $dark-grey;
-        &:active, &:focus {
-            box-shadow: none;
-            border: none;
+
+    .btn, .btn-light {
+        font-size: 14px;
+    }
+      
+    .btn-light {
+        border: #ffffff;
+    }
+    
+    .btn-light, .btn-light:hover {
+        font-weight: bolder;
+        background-color: #ffffff;
+        color: #333333;
+    }
+    .ctrl-popup {
+        margin-top: 24px;
+    }
+}
+
+/* Custom Checkbox */
+.checkbox-container {
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #ced4da;
+        border-radius: 3px;
+        color: #212529;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: none;
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #212529;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
     }
 }
