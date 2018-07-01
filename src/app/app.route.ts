@@ -24,6 +24,7 @@ import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-ti
 import { SwitchComponent } from './dribbble/switch/switch.component';
 import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
+import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
 
 
 const appRoute: Routes = [
@@ -33,7 +34,8 @@ const appRoute: Routes = [
   { path: 'megaman', component: MegamanComponent},
   { path: 'mario', component: MarioComponent },
   { path: 'petronas', component: PetronasComponent },
-  { path: 'jeep', component: JeepComponent },    
+  { path: 'jeep', component: JeepComponent },
+  { path: 'instagram', component: InstagramComponent },
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'landing-page', component: LandingPageComponent },

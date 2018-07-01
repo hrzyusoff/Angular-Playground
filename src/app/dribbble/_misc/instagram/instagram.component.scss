@@ -1,0 +1,350 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// Variable
+$dark-grey: #31353F;
+$light-grey: #F0F0F0;
+$light-grey-2: #D8D8D8;
+$light-grey-text: #919191;
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin col-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@mixin col-3 {
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+}
+
+@mixin col--3 {
+  display: grid;
+  grid-template-columns: 10% auto auto;
+}
+
+@mixin col-4 {
+  display: grid;
+  grid-template-columns: 15% 15% auto 15%;
+}
+
+@mixin col-5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+@mixin row-2 {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+@mixin story {
+  margin: 0 1.5vmin 0 1.5vmin;
+  height: 7vmin;
+  width: 7vmin;
+  border-radius: 50%;
+}
+
+@mixin bold-font {
+  font-weight: bolder;
+}
+
+@mixin overflow-hide {
+  -moz-overflow: hidden;
+  -ms-overflow: hidden;
+  -o-overflow: hidden;
+  -webkit-overflow: hidden;
+  overflow: hidden;
+}
+
+@mixin overflow-scroll {
+  -moz-overflow: scroll;
+  -ms-overflow: scroll;
+  -o-overflow: scroll;
+  -webkit-overflow: scroll;
+  overflow: scroll;
+}
+
+// @media (max-width: 680px) {
+//   .bottom-foot-container {
+//     bottom: 10vmin;
+//   }
+// }
+// Normalize and Standardize
+.title-left,
+.title-right,
+.post-username,
+.detail-bold {
+  @include bold-font;
+}
+
+body {
+  background-color: $dark-grey;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+body,
+html {
+  margin: 0px;
+  user-select: none;
+}
+
+i,
+.top-stories-detail,
+.scroll-top-stories,
+.post-dp,
+.post-image {
+  cursor: pointer;
+}
+
+.container {
+  @include flex-center;
+  height: 100vh;
+}
+
+.screen-container {
+  @include overflow-hide;
+  height: 100vmin;
+  max-height: 80vmin;
+  width: 50vmin;
+}
+
+#home-page {
+  background-color: #fff; // z-index: -999;
+  width: 50vmin;
+  height: 100%;
+}
+
+#search-page {
+  // z-index: 999;
+  background-color: #fff;
+  width: 50vmin;
+  height: 100vmin;
+}
+
+// End of Normalize and Standardize
+// Header
+.top-head-container {
+  @include col-3;
+  position: fixed;
+  background-color: #fff;
+  width: inherit;
+  text-align: center;
+  box-shadow: 0 1px 2px #888888;
+}
+
+.title {
+  font-family: "Grand Hotel", sans-serif;
+  font-weight: 600;
+  font-size: 4vmin;
+  padding-bottom: 1vmin;
+}
+
+.camera,
+.message {
+  font-size: 3vmin;
+  padding-top: 4px;
+}
+
+//.message {
+// //Notification
+// &::after {
+//   position: absolute;
+//   content: "99";
+//   background-color: crimson;
+//   font-size: 2vmin;
+//   color: #fff;
+//   border-radius: 50%;
+//   height: 3vmin;
+//   width: 3vmin;
+//   margin-top: 2vmin;
+//   margin-left: -5vmin;
+// }
+// }
+// End of Header
+// Footer
+.bottom-foot-container {
+  @include col-5;
+  position: absolute;
+  background-color: #fff;
+  color: $light-grey-2;
+  font-size: 3vmin;
+  text-align: center;
+  user-select: none;
+  margin-top: 80vmin;
+  height: 5vmin;
+  width: inherit;
+  padding-top: 4px;
+  box-shadow: 0 -1px 2px #888888;
+  .active {
+    color: #000;
+  }
+}
+
+// End of Footer
+// Content : Stories, Post
+.main-content {
+  @include overflow-scroll;
+  height: 100%;
+}
+
+// - Stories
+.top-stories-detail {
+  @include col-2;
+  width: 50vmin;
+  font-size: 1.8vmin;
+  padding-top: 8vmin;
+}
+
+.title-left,
+.title-right {
+  padding: 6px 12px;
+}
+
+.title-left {
+  text-align: left;
+}
+
+.title-right {
+  text-align: right;
+  .fa-play {
+    padding-right: 4px;
+  }
+}
+
+.scroll-top-stories {
+  @include overflow-scroll;
+  width: 100%;
+}
+
+.top-stories-container {
+  @include row-2;
+}
+
+.top-stories {
+  display: flex;
+  width: 110vmin;
+  padding-top: 1vmin;
+  padding-bottom: 3vmin;
+  border-bottom: 1px solid $light-grey;
+}
+
+.user {
+  @include story;
+  background: $light-grey;
+  .user-name {
+    margin-left: 2vmin;
+  }
+}
+
+.friends {
+  @include story;
+  background: linear-gradient(to left top, crimson, #f90);
+  .friend-name {
+    margin-left: 1.5vmin;
+  }
+}
+
+.user-dp,
+.friend-dp {
+  background: #fff;
+  border-radius: 50%;
+  margin-top: 7.2%;
+  margin-left: 7.2%;
+  height: 6vmin;
+  width: 6vmin;
+}
+
+.user-name,
+.friend-name {
+  font-size: 1.5vmin;
+  margin-top: 1vmin;
+}
+
+// End of Stories
+// - Posts
+.post {
+  height: 100%;
+}
+
+.post-content {
+  .name-and-option {
+    @include col--3;
+    font-size: 1.8vmin;
+    padding-bottom: 2vmin;
+  }
+  .post-dp {
+    background-color: $light-grey;
+    border-radius: 50%;
+    height: 3.5vmin;
+    width: 3.5vmin;
+    text-align: center;
+    margin-left: 2vmin;
+  }
+  .post-username {
+    text-align: left;
+    margin-left: 2vmin;
+    padding-top: 0.5vmin;
+  }
+  .post-option {
+    text-align: right;
+    padding-top: 0.5vmin;
+    padding-right: 2vmin;
+  }
+  .post-image {
+    width: 50vmin;
+    img {
+      width: 50vmin;
+    }
+  }
+  .post-image-option {
+    @include col-4;
+    font-size: 3vmin;
+    padding-bottom: 1vmin;
+  }
+  .like,
+  .comment {
+    text-align: center;
+  }
+  .message-2 {
+    padding-left: 2vmin;
+  }
+  .bookmark {
+    text-align: right;
+    padding-right: 2vmin;
+  }
+}
+
+.post-detail {
+  font-size: 1.8vmin;
+  margin-bottom: 3vmin;
+  margin-left: 2vmin;
+  .friend-comments,
+  .duration {
+    color: $light-grey-text;
+  }
+  .caption {
+    padding-right: 2vmin;
+  }
+  .duration {
+    font-size: 1.2vmin;
+    margin-top: 0.6vmin;
+  }
+}
+
+//End of Posts
+// Scrollbar Tweak
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}

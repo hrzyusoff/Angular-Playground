@@ -31,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsService } from './_services/news.service';
 import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
+import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
     SwitchComponent,
     PetronasComponent,
     JeepComponent,
+    InstagramComponent,
   ],
   imports: [
     BrowserModule,
