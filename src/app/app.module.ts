@@ -35,6 +35,7 @@ import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component'
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
 import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
 import { JsplayComponent } from './dribbble/_misc/jsplay/jsplay.component';
+import { DropdownComponent } from './dribbble/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { JsplayComponent } from './dribbble/_misc/jsplay/jsplay.component';
     InstagramComponent,
     JsplayComponent,
     PricingComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

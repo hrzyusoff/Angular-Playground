@@ -23,6 +23,7 @@ import { DirectMessageComponent } from './dribbble/direct-message/direct-message
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
 import { SwitchComponent } from './dribbble/switch/switch.component';
 import { PricingComponent } from './dribbble/pricing/pricing.component';
+import { DropdownComponent } from './dribbble/dropdown/dropdown.component';
 import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
 import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
@@ -54,7 +55,8 @@ const appRoute: Routes = [
   { path: 'direct-message', component: DirectMessageComponent },
   { path: 'countdown-timer', component: CountdownTimerComponent },
   { path: 'switch', component: SwitchComponent },
-  { path: 'pricing', component: PricingComponent }  
+  { path: 'pricing', component: PricingComponent },
+  { path: 'dropdown', component: DropdownComponent },
 ]
 
 @NgModule ({
