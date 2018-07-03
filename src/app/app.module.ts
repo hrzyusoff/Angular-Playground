@@ -26,12 +26,15 @@ import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
 import { SwitchComponent } from './dribbble/switch/switch.component';
+import { PricingComponent } from './dribbble/pricing/pricing.component';
 import { AppRoutingModule } from './app.route';
 import { HttpClientModule } from '@angular/common/http';
-import { NewsService } from './_services/news.service';
+import { NewsService } from './_services/news/news.service';
+import { CountryService } from './_services/country/country.service';
 import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
 import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
+import { JsplayComponent } from './dribbble/_misc/jsplay/jsplay.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,8 @@ import { InstagramComponent } from './dribbble/_misc/instagram/instagram.compone
     PetronasComponent,
     JeepComponent,
     InstagramComponent,
+    JsplayComponent,
+    PricingComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +74,7 @@ import { InstagramComponent } from './dribbble/_misc/instagram/instagram.compone
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [NewsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 

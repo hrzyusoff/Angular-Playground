@@ -28,6 +28,10 @@
   font-family: 'Nunito-Light';
 }
 
+body {
+    background-color: #31353F;
+}
+
 /* Custom Container */
 .main-container {
     background-color: #31353F;

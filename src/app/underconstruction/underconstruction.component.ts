@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./underconstruction.component.css']
 })
 export class UnderconstructionComponent implements OnInit {
+  
+  message = "This page is underconstruction !";
 
   constructor() { }
 

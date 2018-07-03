@@ -22,9 +22,11 @@ import { ShopComponent } from './dribbble/shop/shop.component';
 import { DirectMessageComponent } from './dribbble/direct-message/direct-message.component';
 import { CountdownTimerComponent } from './dribbble/countdown-timer/countdown-timer.component';
 import { SwitchComponent } from './dribbble/switch/switch.component';
+import { PricingComponent } from './dribbble/pricing/pricing.component';
 import { PetronasComponent } from './dribbble/_misc/petronas/petronas.component';
 import { JeepComponent } from './dribbble/_misc/jeep/jeep.component';
 import { InstagramComponent } from './dribbble/_misc/instagram/instagram.component';
+import { JsplayComponent } from './dribbble/_misc/jsplay/jsplay.component';
 
 
 const appRoute: Routes = [
@@ -36,6 +38,7 @@ const appRoute: Routes = [
   { path: 'petronas', component: PetronasComponent },
   { path: 'jeep', component: JeepComponent },
   { path: 'instagram', component: InstagramComponent },
+  { path: 'jsplay', component: JsplayComponent },  
   { path: 'signup', component: SignUpComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'landing-page', component: LandingPageComponent },
@@ -50,7 +53,8 @@ const appRoute: Routes = [
   { path: 'shop', component: ShopComponent },
   { path: 'direct-message', component: DirectMessageComponent },
   { path: 'countdown-timer', component: CountdownTimerComponent },
-  { path: 'switch', component: SwitchComponent }
+  { path: 'switch', component: SwitchComponent },
+  { path: 'pricing', component: PricingComponent }  
 ]
 
 @NgModule ({

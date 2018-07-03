@@ -1,0 +1,152 @@
+//Nunito Font
+@import url('https://fonts.googleapis.com/css?family=Nunito'); 
+
+//Montserrat Font
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$white: #ffffff;
+$dark-grey-bg: #31353F;
+$dark-grey: #303030;
+$dark-grey-indicator: #b2b2b2;
+$light-grey: #999999;
+$light-grey-collapse: #e6e6e6;
+$orange-yellow: #f9bf3b;
+$nunito: 'Nunito', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+@mixin heading {
+  font: {
+    family: $nunito;
+    weight: 900;
+  }
+  color: $dark-grey;
+}
+
+@mixin main-nunito {
+  font: {
+    family: $nunito;
+    size: 16px;
+  }
+  color: $dark-grey;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, html {
+  background-color: $dark-grey-bg;
+  margin: 0px;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+.main-container, .card-container, .main-card, .top, .middle, .bottom, .basic-feature, .indicator {
+  @include flex-center;
+}
+
+.main-card, .card-features {
+  @include main-nunito;
+}
+
+.card-container, .card-collapse-card {
+  position: absolute;
+}
+
+// .main-container {
+//   height: 100%;
+// }
+
+.card-container {
+  flex-flow: column;
+  height: 445px;
+  width: 300px;
+}
+
+.main-card {
+  flex-flow: column;
+  background-color: $white;
+  border-radius: 12px;
+  z-index: 999;
+  height: 300px;
+  width: 300px;
+}
+
+.top {
+  flex-flow: column;
+  .package-offered {
+    @include heading;
+    font-size: 25px;
+  }
+
+  .package-description {
+    color: $light-grey;
+  }
+}
+
+.middle {
+  font-family: $montserrat;
+  color: $dark-grey;
+  .price {
+    font-size: 100px;
+  }
+
+  .currency {
+    font-size: 30px;
+  }
+}
+
+.bottom {
+  .basic-feature {
+    background-color: $orange-yellow;    
+    height: 35px;
+    width: 160px;
+    border-radius: 3px;
+  }
+}
+
+.card-collapse-card {
+  background-color: $light-grey-collapse;
+  top: 350px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  .card-features {
+    display: none;
+    background-color: $light-grey-collapse;    
+    width: 260px;
+    // padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    .title {
+      @include heading;
+    }
+    .fa-check {
+      color: $orange-yellow;
+    }
+  }
+}
+
+.indicator {
+  z-index: 999;
+  background-color: $light-grey-collapse;
+  color: $dark-grey-indicator;
+  width: 300px;
+  cursor: pointer;
+}
+
+.features-list {
+  display: flex;
+  flex-flow: row;
+  padding: 6px 0 6px 0;
+  
+  .details {
+    padding-left: 8px;
+  }
+}
