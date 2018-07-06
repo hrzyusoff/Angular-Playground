@@ -3,22 +3,19 @@
     <div class="main-card">
       <h4 class="text-bold">VERIFY YOUR AGE.</h4>
       <p class="text-lighter">Please enter your birth of date to continue</p>
-      <div class="detail-container text-lighter">
+      <div class="date-container text-lighter">
         <div class="day">
           <select class="custom-selectors">
-            <!-- <option disabled>Select Day</option> -->
             <option *ngFor="let day of days" value="{{day}}">{{day}}</option>
           </select>
         </div>
         <div class="month">
           <select>
-            <!-- <option disabled>Select Month</option> -->
             <option *ngFor="let month of months" value="{{month}}">{{month}}</option>
           </select>          
         </div>
         <div class="year">
           <select class="custom-selectors">
-            <!-- <option disabled>Select Year</option> -->
             <option *ngFor="let year of years" value="{{year}}">{{year}}</option>
           </select>          
         </div>

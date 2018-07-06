@@ -2,3 +2,15 @@
     background-color: #31353F;
     margin-left: 270px;
 }
+
+/* @media only screen and (max-width: 600px) {
+    .custom-container {
+        margin-left: 0px;
+    }
+}
+
+.toggle {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+} */

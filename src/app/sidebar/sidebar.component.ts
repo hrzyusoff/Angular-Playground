@@ -69,4 +69,24 @@ export class SidebarComponent {
   //   },
   // ];
 
+  // Rotate Caret
+  // expand(section){
+  //   $( "ul" ).not(document.getElementById('collapse-'+section+'')).removeClass("show");
+  // }
+
+  // rotate(section){
+
+  //     var classList = document.getElementById('rotate-'+section+'').className.split(/\s+/);
+    
+  //     for (var i = 0; i < classList.length; i++) {
+  //       if (classList[i] === 'fa-chevron-down') {
+  //           $('#rotate-'+section+'').removeClass('fa-chevron-up').addClass("fa-chevron-down");
+  //       }
+
+  //       if (classList[i] === 'fa-chevron-up') {
+  //         $('#rotate-'+section+'').removeClass('fa-chevron-down').addClass('fa-chevron-up');
+  //       }
+  //     }
+  // }
+
 }

@@ -75,19 +75,52 @@ h4 {
     }
 }
 
-.detail-container {
+.date-container {
     @include flex-center;
     margin-bottom: 5rem;
+
     .day, .month, .year {
         margin: 0 6px 0 6px;
     }
+    
+    select {
+        height: 35px;
+        padding: 0 5px 0 5px;
+    }
+    
+    .custom-selectors {
+        width: 75px;
+    }
+
+    // .drop-it-down {
+    //     position: relative;
+    //     width: 200px;
+
+    //     select {
+    //         display: none;
+    //     }
+
+    // }
+
+    // .select-selected {
+    //     background-color: dodgerblue;
+
+    //     &::after {
+    //         position: absolute;
+    //         content: "";
+    //         top: 14px;
+    //         right: 10px;
+    //         width: 0; height: 0;
+    //         border: 6px solid transparent;
+    //         border-color: #fff transparent transparent transparent;
+    //     }
+
+    //     .select-arrow-active::after {
+    //         border-color: 
+    //     }
+
+    // }
+
 }
 
-select {
-    height: 35px;
-    padding: 0 5px 0 5px;
-}
 
-.custom-selectors {
-    width: 75px;
-}

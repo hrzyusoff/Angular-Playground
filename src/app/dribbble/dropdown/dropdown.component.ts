@@ -24,7 +24,10 @@ export class DropdownComponent implements OnInit {
   }
 
   ngOnInit() {
+    const PI = 3.142;
+    PI > 3
 
+    console.log(PI);
   }
 
 }
